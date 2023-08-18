@@ -1,0 +1,8 @@
+<h1> t'est dans le new mon pote </h1>
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name%>
+  <%= f.button :submit, class:"btn btn-primary" %>
+<% end %>
+
+<%= link_to "retour a l'acceuil", root_path %>

@@ -1,0 +1,8 @@
+<h1>On est dans mon index</h1>
+
+<% @lists.each do |list| %>
+<%= link_to "#{list.name}", list_path(list) %> <br> <br>
+<% end %>
+<br> <br>
+
+<%= link_to "Create a new list", new_list_path %>
